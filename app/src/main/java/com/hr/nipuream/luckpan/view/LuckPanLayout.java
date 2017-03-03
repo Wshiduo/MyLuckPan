@@ -82,7 +82,7 @@ public class LuckPanLayout extends View {
 
         canvas.drawCircle(CircleX,CircleY,radius,backgroundPaint);
 
-        drawSmallCircle(isYellow);
+//        drawSmallCircle(isYellow);
     }
 
     private void drawSmallCircle(boolean FirstYellow){
@@ -92,7 +92,7 @@ public class LuckPanLayout extends View {
             int y = (int) (pointDistance * Math.cos(Util.change(i))) + CircleY;
 
             if(FirstYellow)
-                canvas.drawCircle(x,y,Util.dip2px(context,4),yellowPaint);
+                canvas.drawCircle(x,y,Util.dip2px(context,5.5f),yellowPaint);
             else
                 canvas.drawCircle(x,y,Util.dip2px(context,4),whitePaint);
             FirstYellow = !FirstYellow;

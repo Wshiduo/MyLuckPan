@@ -13,30 +13,28 @@
     android:layout_height="match_parent"
     >
 
+<!--
+    <com.hr.nipuream.luckpan.view.EnvironmentLayout
+        android:id="@+id/evironmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
-    <!--<com.hr.nipuream.luckpan.view.EnvironmentLayout-->
-        <!--android:id="@+id/evironmentLayout"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--/>-->
-
-
-
-    <!--<ImageView-->
-        <!--android:id="@+id/imageview"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:src="@mipmap/ic_launcher"-->
-        <!--android:layout_centerInParent="true"-->
-        <!--/>-->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerInParent="true"
+        />
 
 
-    <!--<ImageView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:src="@mipmap/background"-->
-        <!--android:scaleType="fitXY"-->
-        <!--/>-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background"
+        android:scaleType="fitXY"
+        />-->
 
     <ImageView
         android:id="@+id/shan"
@@ -71,12 +69,12 @@
         android:layout_centerHorizontal="true"
         />
 
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="旋转"-->
-        <!--android:onClick="rotation"-->
-        <!--/>-->
+ <!--   <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旋转"
+        android:onClick="rotation"
+        />-->
 
     <ImageView
         android:id="@+id/go"

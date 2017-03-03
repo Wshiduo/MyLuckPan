@@ -197,14 +197,18 @@ public class RotatePan extends View {
 //            mCanvas.rotate(everyAngle ,r,r);  //方式2:旋转的是带有文字的“纸——mCanvas”，此时笔(View的坐标)是不动的，可替换换方式1处代码*/
 
 /************************************************* 4 文字发射状显示 ************************************************************/
-//设计思路：采用每个字符串使用一个圆弧，并且每个圆弧都只放一个文字，该字符串的其他文字则根据该文字进行相对位置平移生成
-      /*  Path path = new Path();
+/*//设计思路：采用每个字符串使用一个圆弧，并且每个圆弧都只放一个文字，该字符串的其他文字则根据该文字进行相对位置平移生成
+        Path path = new Path();
         path.addArc(mRange, startAngle, everyAngle);  //startAngle决定了绘制的初始位置,该位置的值可调整以适应扇形背景区域
         Rect bounds = new Rect();
-        mTextPaint.getTextBounds(string.substring(0, 1), 0, 1, bounds);  //此固定值在开发时不需要放到循环中
-        int wordHeight = bounds.height() + 14;  //14是增加的字间距,因为中英文的文字高度不同，会导致显示效果不均一，这里可以用定值替代
-        int i = 6;   //因绘制文字采用的是由中心向四周发射方式，此处指定vOffset相对path垂直向内偏移量（包括字间距）
-        for (int j = string.length() - 1; j >= 0; j--) {  //为了使每串字符串都与圆心保持相同距离，此处采用倒序绘制文字
+        //此固定值在开发时不需要放到循环中
+        mTextPaint.getTextBounds(string.substring(0, 1), 0, 1, bounds);
+        //14是增加的字间距,因为中英文的文字高度不同，会导致显示效果不均一，这里可以用定值替代
+        int wordHeight = bounds.height() + 14;
+        //因绘制文字采用的是由中心向四周发射方式，此处指定vOffset相对path垂直向内偏移量（包括字间距）
+        int i = 6;
+        //为了使每串字符串都与圆心保持相同距离，此处采用倒序绘制文字
+        for (int j = string.length() - 1; j >= 0; j--) {
             //若hOffset和vOffset都为0时，该方法会让文字沿着Path路径绘制文本，hOffset参数指定相对path水平偏移,hOffset值为正数则向path正方向偏移，vOffset指定相对path垂直偏移，若vOffset值为正则向下向内偏移；
             mCanvas.drawTextOnPath(string.substring(j, j + 1), path,0, wordHeight * i--, textPaint);
         }

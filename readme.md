@@ -41,6 +41,5 @@ Android 抽奖转盘的实现，如下图所示：<br/>
 
 <br/>
 ## 更多信息 ##
-[http://blog.csdn.net/yanghuinipurean/article/details/52251107](http://blog.csdn.net/yanghuinipurean/article/details/52251107)
-
+[http://blog.csdn.net/wshiduo/article/details/60080972](http://blog.csdn.net/wshiduo/article/details/60080972)
 
